@@ -139,7 +139,7 @@ color: rgb(189, 189, 189);
 }
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
-background-color: white;
+background-color: $color-1-bg;
 color: white;
 border-radius: 6px;
 }
