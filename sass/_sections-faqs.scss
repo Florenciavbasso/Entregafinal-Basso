@@ -1,0 +1,71 @@
+/* ____________ MOBILE ____________ */
+/* ____________ MOBILE ____________ */
+/* ____________ MOBILE ____________ */
+/* ____________ MOBILE ____________ */
+/* ____________ MOBILE ____________ */
+
+.faqs{
+    min-height: 85vh;
+}
+
+.faqs__enquiry{
+    margin: 30px 15px 30px 15px;
+}
+
+#faqs__question{
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+
+.accordion-button {
+    background-color: $bg-color-2;
+    color: $color-3-txt;
+    border: 1.5px solid white;
+}
+
+.accordion-button:not(.collapsed) {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: $bg-color-2;
+    background-color: $color-3-txt;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: $bg-color-1;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(110, 102, 95, 0.37);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    transform: rotate(-180deg);
+}
+
+
+/* ____________ TABLET ____________ */
+/* ____________ TABLET ____________ */
+/* ____________ TABLET ____________ */
+/* ____________ TABLET ____________ */
+/* ____________ TABLET ____________ */
+
+
+/* ____________ DESKTOP ____________ */
+/* ____________ DESKTOP ____________ */
+/* ____________ DESKTOP ____________ */
+/* ____________ DESKTOP ____________ */
+/* ____________ DESKTOP ____________ */
+
+h1{
+    grid-area: title;
+}
+
+.faqs-all{
+    grid-area: faqs;
+    margin: 20px 0
+    
+}
+

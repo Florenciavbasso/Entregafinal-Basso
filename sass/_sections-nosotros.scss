@@ -1,0 +1,242 @@
+/* ____________ MOBILE ____________ */
+/* ____________ MOBILE ____________ */
+/* ____________ MOBILE ____________ */
+/* ____________ MOBILE ____________ */
+/* ____________ MOBILE ____________ */
+
+
+/* EQUIPO ---------------------------------------------- */
+
+h1 {
+    padding: 0 0 35px 0;
+    margin: 0;
+}
+
+.nosotros__bubble {
+    margin: 10px 0;
+    border-radius: 0px;
+}
+
+.equipo {
+    @extend .albergue-txt;
+}
+
+.n-title-equipo {
+    @extend .i-title;
+    @extend .it-albergue;
+    @include font (20px, 800, normal);
+    font-family: 'Montserrat';
+    margin-top: 50px
+}
+
+.equipo-txt {
+    @extend .i-txt;
+    @extend .i-txt-albergue;
+    padding: 10px 25px;
+}
+
+.nosotros__cofounders {
+    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cofounder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+#cofounder1 {
+    padding: 0 0 0 35px;
+}
+
+#cofounder2 {
+    padding: 0 35px 0 0;
+}
+
+.nosotros__subtitle {
+    @include font (14px, 700, normal);
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+.equipo__icon {
+    max-width: 60px;
+}
+
+.equipo__img {
+    max-width: 90%;
+    margin-top: 20px;
+}
+
+/* COMIENZOS ---------------------------------------------- */
+
+.comienzos {
+    @extend .huespedes-txt;
+}
+
+
+.n-title-comienzos {
+    @extend .n-title-equipo;
+    @extend .it-huespedes;
+}
+
+.comienzos-txt {
+    @extend .equipo-txt;
+    @extend .i-txt-huespedes;
+}
+
+/* MISION VISION VALORES ---------------------------------------------- */
+
+.mv,
+.valores {
+    @extend .index__ribbon;
+}
+
+.mv-title,
+.vision-title,
+.valores-title {
+    @extend .i-title;
+    @extend .it-opiniones;
+    @include font (20px, 800, normal);
+}
+
+.mvv-txt {
+    @extend .equipo-txt;
+    color: $color-3-txt;
+
+}
+
+/* ____________ TABLET ____________ */
+/* ____________ TABLET ____________ */
+/* ____________ TABLET ____________ */
+/* ____________ TABLET ____________ */
+/* ____________ TABLET ____________ */
+
+@media (min-width: 768px) {
+
+    .equipo__img {
+        max-width: 550px;
+        margin-top: 40px;
+    }
+
+    .nosotros__bubble {
+        border-radius: 25px;
+        margin: 20px 0px 20px 0px;
+    }
+
+}
+
+/* ____________ DESKTOP ____________ */
+/* ____________ DESKTOP ____________ */
+/* ____________ DESKTOP ____________ */
+/* ____________ DESKTOP ____________ */
+/* ____________ DESKTOP ____________ */
+
+
+@media (min-width: 1200px) {
+
+    h1 {
+        padding: 0 0 35px 0;
+        margin: 0;
+    }
+    
+
+
+    /* EQUIPO ---------------------------------------------- */
+
+    .nosotros__bubble {
+        margin: 10px 10px 10px 10px;
+    }
+
+
+    .equipo {
+        @extend .albergue-txt;
+        border-radius: 35px 35px 0 0;
+        grid-area: equipo;
+        margin-bottom: 3px
+    }
+
+    .n-title-equipo {
+        @extend .i-title;
+        @extend .it-albergue;
+        @include font (20px, 800, normal);
+        font-family: 'Montserrat';
+        margin: 60px 0 100px 0
+    }
+
+    .equipo-txt {
+        @extend .i-txt;
+        @extend .i-txt-albergue;
+        text-align: center;
+        padding: 10px 40px;
+        margin: 30px;
+    }
+
+    .equipo__img {
+        max-width: 85%;
+        margin-top: 20px;
+    }
+
+
+    /* COMIENZOS ---------------------------------------------- */
+
+
+    .comienzos {
+        grid-area: comienzos;
+        border-radius: 0 0 35px 35px;
+        margin-top: 3px;
+    }
+
+    /* MISION VISION VALORES ---------------------------------------------- */
+
+    .mv {
+        grid-area: mv;
+        border-radius: 35px 0 0 35px;
+        margin-right: 3px;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .valores {
+        grid-area: valores;
+        border-radius: 0 35px 35px 0;
+        margin-right: 10px;
+        margin-left: 3px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .nosotros {
+        display: grid;
+        grid-template-areas:
+            "title title title title title"
+            "equipo equipo equipo mv valores"
+            "equipo equipo equipo mv valores"
+            "equipo equipo equipo mv valores"
+            "comienzos comienzos comienzos mv valores";
+    }
+
+    #mv,
+    #valores {
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .nosotros-main{
+        grid-area: title;
+    }
+
+}
+
+
+

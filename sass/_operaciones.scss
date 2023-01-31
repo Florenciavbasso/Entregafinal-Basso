@@ -1,0 +1,33 @@
+/* ________ ESTILOS ________ */
+
+$fontfamily-1: 'Montserrat';
+$fontfamily-2: 'Mukta';
+
+$bg-color-1: #eae5d8;
+$bg-color-2: #f4f4f4;
+
+$color-1-txt: #225d2d;
+$color-1-bg: #93b605;
+
+$color-2-txt: #e9e0c4;
+$color-2-bg: #225d2d;
+
+$color-3-txt: #f46c3d;
+
+$txt-dark: black;
+$txt-light: white;
+
+
+
+/* ________ MIXIN ________ */
+
+@mixin colors ($bgcolor, $color) {
+    background-color: $bgcolor;
+    color: $color;
+}
+
+@mixin font ($fontsize, $fontweight, $fontstyle){
+    font-size: $fontsize;
+    font-weight: $fontweight;
+    font-style: $fontstyle;
+}

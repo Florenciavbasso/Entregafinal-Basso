@@ -1,0 +1,201 @@
+/* ____________ MOBILE ____________ */
+/* ____________ MOBILE ____________ */
+/* ____________ MOBILE ____________ */
+/* ____________ MOBILE ____________ */
+/* ____________ MOBILE ____________ */
+
+/* EQUIPO ---------------------------------------------- */
+
+h1 {
+    padding: 0 0 35px 0;
+    margin: 0;
+}
+
+.hotel, .socializacion, .guarderia, .traslados,.paseos, .esquilados {
+    margin: 10px 0
+}
+
+/* _________ burbuja _________ */ 
+
+.hotel, .socializacion {
+    @extend .albergue-txt;
+}
+
+.guarderia, .traslados {
+    @extend .huespedes-txt;
+}
+
+.paseos, .esquilados {
+    @extend .index__ribbon;
+}
+
+/* _________ titulo _________ */ 
+
+.hotel-title, .social-title {
+    @extend .i-title;
+    @extend .it-albergue;
+    @include font (20px, 800, normal);
+    font-family: 'Montserrat';
+    margin-top: 50px
+}
+
+.guarderia-title, .traslados-title {
+    @extend .n-title-equipo;
+    @extend .it-huespedes;
+}
+
+.paseos-title, .esquilados-title {
+    @extend .i-title;
+    @extend .it-opiniones;
+    @include font (20px, 800, normal);
+}
+
+
+/* _________ texto _________ */ 
+
+.hotel-txt, .social-txt {
+    @extend .i-txt;
+    @extend .i-txt-albergue;
+    padding: 10px 25px;
+}
+
+.guarderia-txt, .traslados-txt {
+    @extend .i-txt-huespedes;
+}
+
+.paseos-txt, .esquilados-txt {
+    @extend .mvv-txt;
+}
+
+
+
+.servicios__bubble{
+    min-width: 100%;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* ____________ TABLET ____________ */
+/* ____________ TABLET ____________ */
+/* ____________ TABLET ____________ */
+/* ____________ TABLET ____________ */
+/* ____________ TABLET ____________ */
+
+@media (min-width: 768px) {
+
+ .servicios-all{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    grid-column-gap: 15px;
+ }
+
+ .servicios__bubble{
+    border-radius: 25px;
+ }
+
+
+
+}
+
+/* ____________ DESKTOP ____________ */
+/* ____________ DESKTOP ____________ */
+/* ____________ DESKTOP ____________ */
+/* ____________ DESKTOP ____________ */
+/* ____________ DESKTOP ____________ */
+
+
+@media (min-width: 1200px) {
+
+    .servicios-all{
+        display: grid;
+        grid-template-columns: 31% 31% 31%;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+     }
+    
+     .servicios__bubble{
+        border-radius: 25px;
+        margin: 0;
+     }
+
+     .hotel, .socializacion, .guarderia, .traslados,.paseos, .esquilados {
+        margin: 0;
+    }
+
+/* _________ burbuja _________ */ 
+
+.hotel, .socializacion {
+    @extend .albergue-txt;
+}
+
+.guarderia, .traslados {
+    @extend .huespedes-txt;
+}
+
+.paseos, .esquilados {
+    @extend .index__ribbon;
+}
+
+/* _________ titulo _________ */ 
+
+.hotel-title, .social-title {
+    @extend .i-title;
+    @extend .it-albergue;
+    @include font (20px, 800, normal);
+    font-family: 'Montserrat';
+    margin-top: 50px
+}
+
+.guarderia-title, .traslados-title {
+    @extend .n-title-equipo;
+    @extend .it-huespedes;
+}
+
+.paseos-title, .esquilados-title {
+    @extend .i-title;
+    @extend .it-opiniones;
+    @include font (20px, 800, normal);
+}
+
+
+/* _________ texto _________ */ 
+
+.hotel-txt, .social-txt {
+    @extend .i-txt;
+    @extend .i-txt-albergue;
+    padding: 10px 25px;
+}
+
+.guarderia-txt, .traslados-txt {
+    @extend .i-txt-huespedes;
+}
+
+.paseos-txt, .esquilados-txt {
+    @extend .mvv-txt;
+}
+
+
+
+.servicios__bubble{
+    min-width: 100%;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+}

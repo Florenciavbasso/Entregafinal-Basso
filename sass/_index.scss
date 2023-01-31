@@ -1,0 +1,405 @@
+/* ________________ MOBILE ________________ */
+/* ________________ MOBILE ________________ */
+/* ________________ MOBILE ________________ */
+/* ________________ MOBILE ________________ */
+/* ________________ MOBILE ________________ */
+/* ________________ MOBILE ________________ */
+
+.index__content{
+    background-color: $bg-color-1
+}
+
+.main__txt{
+    margin: 0px 30px 20px 30px;
+    padding-top: 50px
+}
+
+.main__title{
+    @include font (50px, 900, normal);
+        font-family: "Manrope";
+        letter-spacing: 2px;
+        line-height: 61px;
+        color: white;
+        text-align: center;
+        grid-area: maintitle;
+    }
+
+
+#main__subtitle{
+    @include font (15px, 400, normal);
+    font-family: 'Manrope';
+    letter-spacing: 2px;
+    line-height: 20px;
+    color: $txt-light;
+    grid-area: mainsub;
+    padding: 50px 65px 30px 65px;
+}
+
+.main__img{
+    display: flex;
+    justify-content: flex-end;
+}
+
+main img{
+    margin-top: 30px;
+    max-height: 300px;
+    grid-area: mainimg;
+}
+
+.index__main{
+    background: rgb(164,182,91);
+    background: linear-gradient(25deg, rgba(164,182,91,1) 29%, rgba(252,135,94,1) 97%);
+    justify-content: space-between;
+}
+
+.ribbon{
+    background-color: $bg-color-1;
+    padding: 50px 0px 10px 0px;
+}
+
+.index__ribbon {
+    padding: 20px 25px 20px 25px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.ribbon__txt{
+    padding: 0px 17px 0px 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $color-3-txt
+}
+
+.ribbon__h2{
+    text-align: center;
+    @include font (30px, 600, normal);
+    font-family: 'Montserrat';
+}
+
+.ribbon__h3{
+    text-align: center;
+    @include font (12px, 400, normal);
+}
+
+.index__images{
+    background-color: $bg-color-1;
+    margin: 10px 0
+}
+
+.instalaciones__img{
+    width: 100%;
+}
+
+.index__section{
+    background-color: $bg-color-1;
+    padding: 0 0 50px 0;
+}
+
+.index__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.albergue-txt{
+    @include colors ($color-1-bg, $color-1-txt);
+    margin-bottom: 5px;
+}
+
+.huespedes-txt {
+    @include colors ($color-2-bg, $color-2-txt);
+    margin-top: 5px;
+}
+
+.i-title{
+    @include font (28px, 900, normal);
+    font-family: 'Montserrat';
+    line-height: 0.65;
+    text-align: center;
+    margin: 50px 0px 100px 5px;
+}
+
+.it-albergue{
+    color: $color-1-txt;
+}
+
+.it-huespedes{
+    color: $color-2-txt;
+}
+
+.i-txt{
+    @include font (14px, 400, normal);
+    text-align: center;
+    margin: 20px;
+    line-height: 1.5;
+
+}
+
+.description__txt{
+    @include font(16px, 400, normal);
+    background-color: $bg-color-1;
+    text-align: center;
+    line-height: 20px;
+    padding: 30px 60px 30px 60px;
+    border-radius: 25px;
+
+}
+
+.index__opiniones{
+    flex-direction: column;
+    align-items: center;
+}
+
+.it-opiniones{
+    color: $color-3-txt;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.opiniones-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px 35px 0px;
+}
+
+.i-txt-opiniones{
+    @extend .i-txt;
+    color: $color-3-txt;
+    max-width: 70%;
+}
+
+.main__images{
+    background-color: $bg-color-1;
+    padding: 30px 80px 30px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.index__img{
+    max-width: 12%;
+    border-radius: 15px;
+    display: flex;
+    border: 2px solid white;
+}
+
+
+/* ________________ TABLET ________________ */
+/* ________________ TABLET ________________ */
+/* ________________ TABLET ________________ */
+/* ________________ TABLET ________________ */
+/* ________________ TABLET ________________ */
+/* ________________ TABLET ________________ */
+
+@media (min-width: 768px){
+
+    .opiniones-txt{
+        display: flex;
+        flex-direction: row;
+        padding: 20px 50px 35px 50px;
+    }
+
+}
+
+
+
+/* ________________ DESKTOP ________________ */
+/* ________________ DESKTOP ________________ */
+/* ________________ DESKTOP ________________ */
+/* ________________ DESKTOP ________________ */
+/* ________________ DESKTOP ________________ */
+/* ________________ DESKTOP ________________ */
+
+
+@media (min-width: 1200px){
+
+    .index__main{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        min-height: 600px;
+        grid-template-areas: none;
+    }
+
+    .main__txt{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .main__title {
+        @include font (70px, 800, normal);
+        font-family: 'Manrope';
+        letter-spacing: 5px;
+        letter-spacing: 0px;
+        line-height: 85px;
+        color: white;
+        text-align: left;
+        margin: 100px 0px 75px 0;
+        padding: 0;
+    }
+    
+    #main__subtitle{
+        @include font (20px, 400, normal);
+        font-family: 'Manrope';
+        letter-spacing: 2px;
+        margin: 0 200px 100px 0;
+        padding: 0;
+    }
+
+    .main__img{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    main img{
+        margin: 0;
+        width: 85%;
+        max-height: 100%;
+        object-fit: cover;
+        object-position: bottom;
+    }
+
+    .ribbon{
+        background-color: $bg-color-1;
+        padding: 75px 0px 75px 0px;
+    }
+
+    .index__ribbon {
+        margin: 0px 80px 0px 80px;
+        justify-content: space-evenly;
+        background-color: $bg-color-2;
+        border-radius: 25px;
+    }
+    
+    .ribbon__txt{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 210px;
+    }
+    
+    .ribbon__h2{
+        @include font (70px, 600, normal);
+        text-align: center;
+    }
+    
+    .ribbon__h3{
+        @include font (15px, 400, normal);
+        text-align: center;
+    }
+
+    .index__images{
+        background-color: $bg-color-1;
+        border-radius: 0;
+        padding: 80px;
+    }
+
+    .carousel-inner{
+        border-radius: 30px;
+    }
+
+
+    .index__info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 80px;
+    }
+    
+    .description{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 2px 20px 80px;
+    }
+
+    .description-txt{
+        min-height: 630px;
+        padding: 30px 80px 30px 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .albergue-txt{
+        @include colors ($color-1-bg, $color-1-txt);
+        margin: 0 5px 0 0 ;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 70px;
+    }
+
+    .huespedes-txt{
+        @include colors ($color-2-bg, $color-2-txt);
+        margin: 0 0 0 5px;
+        border-top-right-radius: 70px;
+        border-bottom-right-radius: 30px;
+    }
+    
+    .i-title{
+        @include font (28px, 900, normal);
+        line-height: 0.65;
+        text-align: left;
+        margin: 50px 0px 200px 0px;
+    }
+
+    .it-albergue{
+        color: $color-1-txt;
+    }
+
+    .it-huespedes{
+        color: $color-2-txt;
+        text-align: right;
+    }
+
+    .i-txt{
+        @include font (18px, 400, normal);
+        text-align: center;
+        line-height: 30px;
+        margin: 0
+    }
+
+    .i-txt-albergue{
+        text-align: left;
+        margin-right: 50px
+    }
+
+    .i-txt-huespedes{
+        text-align: right;
+        margin-left: 50px
+    }
+
+    .index__opiniones{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .it-opiniones{
+        color: $color-3-txt;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    #description__txt__opiniones{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px 150px 20px 150px;
+    }
+
+    .i-txt-opiniones{
+        @extend .i-txt;
+        color: $color-3-txt;
+        max-width: 50%;
+    }
+
+
+
+
+
+}

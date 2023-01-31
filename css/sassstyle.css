@@ -1,0 +1,1164 @@
+/* ________ ESTILOS ________ */
+/* ________ MIXIN ________ */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet');
+* {
+  font-family: "Manrope";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+footer h2 {
+  font-size: 12px;
+  font-weight: 550;
+  color: black;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+footer h3 {
+  font-size: 10px;
+  color: rgb(133, 133, 133);
+  font-weight: 200;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+footer section {
+  margin: 0 12px 0 12px;
+}
+
+footer img {
+  height: 20px;
+  width: 20px;
+}
+
+.socialmedia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerimg {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.link {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-family: "Montserrat";
+  font-weight: 900;
+  letter-spacing: 6px;
+}
+
+.img-logo {
+  width: 26;
+  height: 22px;
+  margin-right: 10px;
+}
+
+.nav-item {
+  font-family: "Manrope";
+  font-weight: 900;
+  font-size: 15px;
+}
+
+@media (min-width: 600px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 6px;
+    padding-left: 6px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(104, 104, 104);
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: rgb(189, 189, 189);
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
+  background-color: white;
+  color: white;
+  border-radius: 6px;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  align-items: flex-end;
+}
+
+.navbar-nav .nav-link {
+  padding: 0.25rem 0.75rem;
+  font-family: "Manrope";
+}
+
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+  margin-top: 20px;
+}
+
+@media (min-width: 600px) {
+  .nav-item {
+    font-family: "Manrope";
+    font-weight: 600;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 15px;
+    font-weight: 600;
+    font-style: normal;
+    color: black;
+  }
+  .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(189, 189, 189);
+  }
+  .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
+    background-color: #93b605;
+    color: white;
+    border-radius: 6px;
+  }
+  .navbar-light .navbar-nav .nav-link.active:hover, .navbar-light .navbar-nav .show > .nav-link {
+    color: rgba(0, 0, 0, 0.9);
+  }
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+  }
+  .navbar-expand-lg .navbar-toggler {
+    display: none;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    align-items: flex-end;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 0;
+    align-items: center;
+    justify-items: flex-end;
+    margin-top: 0;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-toggler {
+    display: none;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 0;
+    align-items: center;
+    justify-items: flex-end;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: flex-end;
+  }
+}
+/* ________________ MOBILE ________________ */
+/* ________________ MOBILE ________________ */
+/* ________________ MOBILE ________________ */
+/* ________________ MOBILE ________________ */
+/* ________________ MOBILE ________________ */
+/* ________________ MOBILE ________________ */
+.index__content {
+  background-color: #eae5d8;
+}
+
+.main__txt {
+  margin: 0px 30px 20px 30px;
+  padding-top: 50px;
+}
+
+.main__title {
+  font-size: 50px;
+  font-weight: 900;
+  font-style: normal;
+  font-family: "Manrope";
+  letter-spacing: 2px;
+  line-height: 61px;
+  color: white;
+  text-align: center;
+  grid-area: maintitle;
+}
+
+#main__subtitle {
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Manrope";
+  letter-spacing: 2px;
+  line-height: 20px;
+  color: white;
+  grid-area: mainsub;
+  padding: 50px 65px 30px 65px;
+}
+
+.main__img {
+  display: flex;
+  justify-content: flex-end;
+}
+
+main img {
+  margin-top: 30px;
+  max-height: 300px;
+  grid-area: mainimg;
+}
+
+.index__main {
+  background: rgb(164, 182, 91);
+  background: linear-gradient(25deg, rgb(164, 182, 91) 29%, rgb(252, 135, 94) 97%);
+  justify-content: space-between;
+}
+
+.ribbon {
+  background-color: #eae5d8;
+  padding: 50px 0px 10px 0px;
+}
+
+.index__ribbon, .paseos, .esquilados, .mv,
+.valores {
+  padding: 20px 25px 20px 25px;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.ribbon__txt {
+  padding: 0px 17px 0px 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f46c3d;
+}
+
+.ribbon__h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  font-style: normal;
+  font-family: "Montserrat";
+}
+
+.ribbon__h3 {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.index__images {
+  background-color: #eae5d8;
+  margin: 10px 0;
+}
+
+.instalaciones__img {
+  width: 100%;
+}
+
+.index__section {
+  background-color: #eae5d8;
+  padding: 0 0 50px 0;
+}
+
+.index__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.albergue-txt, .hotel, .socializacion, .equipo {
+  background-color: #93b605;
+  color: #225d2d;
+  margin-bottom: 5px;
+}
+
+.huespedes-txt, .guarderia, .traslados, .comienzos {
+  background-color: #225d2d;
+  color: #e9e0c4;
+  margin-top: 5px;
+}
+
+.i-title, .paseos-title, .esquilados-title, .hotel-title, .social-title, .mv-title,
+.vision-title,
+.valores-title, .n-title-equipo, .guarderia-title, .traslados-title, .n-title-comienzos {
+  font-size: 28px;
+  font-weight: 900;
+  font-style: normal;
+  font-family: "Montserrat";
+  line-height: 0.65;
+  text-align: center;
+  margin: 50px 0px 100px 5px;
+}
+
+.it-albergue, .hotel-title, .social-title, .n-title-equipo, .guarderia-title, .traslados-title, .n-title-comienzos {
+  color: #225d2d;
+}
+
+.it-huespedes, .guarderia-title, .traslados-title, .n-title-comienzos {
+  color: #e9e0c4;
+}
+
+.i-txt, .hotel-txt, .social-txt, .equipo-txt, .mvv-txt, .paseos-txt, .esquilados-txt, .comienzos-txt, .i-txt-opiniones {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin: 20px;
+  line-height: 1.5;
+}
+
+.description__txt {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #eae5d8;
+  text-align: center;
+  line-height: 20px;
+  padding: 30px 60px 30px 60px;
+  border-radius: 25px;
+}
+
+.index__opiniones {
+  flex-direction: column;
+  align-items: center;
+}
+
+.it-opiniones, .paseos-title, .esquilados-title, .mv-title,
+.vision-title,
+.valores-title {
+  color: #f46c3d;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.opiniones-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0px 35px 0px;
+}
+
+.i-txt-opiniones {
+  color: #f46c3d;
+  max-width: 70%;
+}
+
+.main__images {
+  background-color: #eae5d8;
+  padding: 30px 80px 30px 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.index__img {
+  max-width: 12%;
+  border-radius: 15px;
+  display: flex;
+  border: 2px solid white;
+}
+
+/* ________________ TABLET ________________ */
+/* ________________ TABLET ________________ */
+/* ________________ TABLET ________________ */
+/* ________________ TABLET ________________ */
+/* ________________ TABLET ________________ */
+/* ________________ TABLET ________________ */
+@media (min-width: 768px) {
+  .opiniones-txt {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 50px 35px 50px;
+  }
+}
+/* ________________ DESKTOP ________________ */
+/* ________________ DESKTOP ________________ */
+/* ________________ DESKTOP ________________ */
+/* ________________ DESKTOP ________________ */
+/* ________________ DESKTOP ________________ */
+/* ________________ DESKTOP ________________ */
+@media (min-width: 1200px) {
+  .index__main {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    min-height: 600px;
+    grid-template-areas: none;
+  }
+  .main__txt {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__title {
+    font-size: 70px;
+    font-weight: 800;
+    font-style: normal;
+    font-family: "Manrope";
+    letter-spacing: 5px;
+    letter-spacing: 0px;
+    line-height: 85px;
+    color: white;
+    text-align: left;
+    margin: 100px 0px 75px 0;
+    padding: 0;
+  }
+  #main__subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Manrope";
+    letter-spacing: 2px;
+    margin: 0 200px 100px 0;
+    padding: 0;
+  }
+  .main__img {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  main img {
+    margin: 0;
+    width: 85%;
+    max-height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: bottom;
+       object-position: bottom;
+  }
+  .ribbon {
+    background-color: #eae5d8;
+    padding: 75px 0px 75px 0px;
+  }
+  .index__ribbon, .paseos, .esquilados, .mv,
+.valores {
+    margin: 0px 80px 0px 80px;
+    justify-content: space-evenly;
+    background-color: #f4f4f4;
+    border-radius: 25px;
+  }
+  .ribbon__txt {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 210px;
+  }
+  .ribbon__h2 {
+    font-size: 70px;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+  }
+  .ribbon__h3 {
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+  }
+  .index__images {
+    background-color: #eae5d8;
+    border-radius: 0;
+    padding: 80px;
+  }
+  .carousel-inner {
+    border-radius: 30px;
+  }
+  .index__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 80px;
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 2px 20px 80px;
+  }
+  .description-txt {
+    min-height: 630px;
+    padding: 30px 80px 30px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .albergue-txt, .hotel, .socializacion, .equipo {
+    background-color: #93b605;
+    color: #225d2d;
+    margin: 0 5px 0 0;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 70px;
+  }
+  .huespedes-txt, .guarderia, .traslados, .comienzos {
+    background-color: #225d2d;
+    color: #e9e0c4;
+    margin: 0 0 0 5px;
+    border-top-right-radius: 70px;
+    border-bottom-right-radius: 30px;
+  }
+  .i-title, .paseos-title, .esquilados-title, .hotel-title, .social-title, .mv-title,
+.vision-title,
+.valores-title, .n-title-equipo, .guarderia-title, .traslados-title, .n-title-comienzos {
+    font-size: 28px;
+    font-weight: 900;
+    font-style: normal;
+    line-height: 0.65;
+    text-align: left;
+    margin: 50px 0px 200px 0px;
+  }
+  .it-albergue, .hotel-title, .social-title, .n-title-equipo, .guarderia-title, .traslados-title, .n-title-comienzos {
+    color: #225d2d;
+  }
+  .it-huespedes, .guarderia-title, .traslados-title, .n-title-comienzos {
+    color: #e9e0c4;
+    text-align: right;
+  }
+  .i-txt, .hotel-txt, .social-txt, .equipo-txt, .mvv-txt, .paseos-txt, .esquilados-txt, .comienzos-txt, .i-txt-opiniones {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    line-height: 30px;
+    margin: 0;
+  }
+  .i-txt-albergue, .hotel-txt, .social-txt, .equipo-txt, .mvv-txt, .paseos-txt, .esquilados-txt, .comienzos-txt {
+    text-align: left;
+    margin-right: 50px;
+  }
+  .i-txt-huespedes, .guarderia-txt, .traslados-txt, .comienzos-txt {
+    text-align: right;
+    margin-left: 50px;
+  }
+  .index__opiniones {
+    flex-direction: column;
+    align-items: center;
+  }
+  .it-opiniones, .paseos-title, .esquilados-title, .mv-title,
+.vision-title,
+.valores-title {
+    color: #f46c3d;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  #description__txt__opiniones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 150px 20px 150px;
+  }
+  .i-txt-opiniones {
+    color: #f46c3d;
+    max-width: 50%;
+  }
+}
+/* ____________ MOBILE ____________ */
+/* ____________ MOBILE ____________ */
+/* ____________ MOBILE ____________ */
+/* ____________ MOBILE ____________ */
+/* ____________ MOBILE ____________ */
+/* EQUIPO ---------------------------------------------- */
+h1 {
+  padding: 0 0 35px 0;
+  margin: 0;
+}
+
+.nosotros__bubble {
+  margin: 10px 0;
+  border-radius: 0px;
+}
+
+.n-title-equipo, .guarderia-title, .traslados-title, .n-title-comienzos {
+  font-size: 20px;
+  font-weight: 800;
+  font-style: normal;
+  font-family: "Montserrat";
+  margin-top: 50px;
+}
+
+.equipo-txt, .mvv-txt, .paseos-txt, .esquilados-txt, .comienzos-txt {
+  padding: 10px 25px;
+}
+
+.nosotros__cofounders {
+  display: flex;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cofounder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+#cofounder1 {
+  padding: 0 0 0 35px;
+}
+
+#cofounder2 {
+  padding: 0 35px 0 0;
+}
+
+.nosotros__subtitle {
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+
+.equipo__icon {
+  max-width: 60px;
+}
+
+.equipo__img {
+  max-width: 90%;
+  margin-top: 20px;
+}
+
+/* COMIENZOS ---------------------------------------------- */
+/* MISION VISION VALORES ---------------------------------------------- */
+.mv-title,
+.vision-title,
+.valores-title {
+  font-size: 20px;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.mvv-txt, .paseos-txt, .esquilados-txt {
+  color: #f46c3d;
+}
+
+/* ____________ TABLET ____________ */
+/* ____________ TABLET ____________ */
+/* ____________ TABLET ____________ */
+/* ____________ TABLET ____________ */
+/* ____________ TABLET ____________ */
+@media (min-width: 768px) {
+  .equipo__img {
+    max-width: 550px;
+    margin-top: 40px;
+  }
+  .nosotros__bubble {
+    border-radius: 25px;
+    margin: 20px 0px 20px 0px;
+  }
+}
+/* ____________ DESKTOP ____________ */
+/* ____________ DESKTOP ____________ */
+/* ____________ DESKTOP ____________ */
+/* ____________ DESKTOP ____________ */
+/* ____________ DESKTOP ____________ */
+@media (min-width: 1200px) {
+  h1 {
+    padding: 0 0 35px 0;
+    margin: 0;
+  }
+  /* EQUIPO ---------------------------------------------- */
+  .nosotros__bubble {
+    margin: 10px 10px 10px 10px;
+  }
+  .equipo {
+    border-radius: 35px 35px 0 0;
+    grid-area: equipo;
+    margin-bottom: 3px;
+  }
+  .n-title-equipo, .guarderia-title, .traslados-title, .n-title-comienzos {
+    font-size: 20px;
+    font-weight: 800;
+    font-style: normal;
+    font-family: "Montserrat";
+    margin: 60px 0 100px 0;
+  }
+  .equipo-txt, .comienzos-txt, .mvv-txt, .paseos-txt, .esquilados-txt {
+    text-align: center;
+    padding: 10px 40px;
+    margin: 30px;
+  }
+  .equipo__img {
+    max-width: 85%;
+    margin-top: 20px;
+  }
+  /* COMIENZOS ---------------------------------------------- */
+  .comienzos {
+    grid-area: comienzos;
+    border-radius: 0 0 35px 35px;
+    margin-top: 3px;
+  }
+  /* MISION VISION VALORES ---------------------------------------------- */
+  .mv {
+    grid-area: mv;
+    border-radius: 35px 0 0 35px;
+    margin-right: 3px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .valores {
+    grid-area: valores;
+    border-radius: 0 35px 35px 0;
+    margin-right: 10px;
+    margin-left: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nosotros {
+    display: grid;
+    grid-template-areas: "title title title title title" "equipo equipo equipo mv valores" "equipo equipo equipo mv valores" "equipo equipo equipo mv valores" "comienzos comienzos comienzos mv valores";
+  }
+  #mv,
+#valores {
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .nosotros-main {
+    grid-area: title;
+  }
+}
+/* ____________ MOBILE ____________ */
+/* ____________ MOBILE ____________ */
+/* ____________ MOBILE ____________ */
+/* ____________ MOBILE ____________ */
+/* ____________ MOBILE ____________ */
+.faqs {
+  min-height: 85vh;
+}
+
+.faqs__enquiry {
+  margin: 30px 15px 30px 15px;
+}
+
+#faqs__question {
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+
+.accordion-button {
+  background-color: #f4f4f4;
+  color: #f46c3d;
+  border: 1.5px solid white;
+}
+
+.accordion-button:not(.collapsed) {
+  font-family: "Montserrat";
+  font-weight: 600;
+  color: #f4f4f4;
+  background-color: #f46c3d;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.13);
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: #eae5d8;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(110, 102, 95, 0.37);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  transform: rotate(-180deg);
+}
+
+/* ____________ TABLET ____________ */
+/* ____________ TABLET ____________ */
+/* ____________ TABLET ____________ */
+/* ____________ TABLET ____________ */
+/* ____________ TABLET ____________ */
+/* ____________ DESKTOP ____________ */
+/* ____________ DESKTOP ____________ */
+/* ____________ DESKTOP ____________ */
+/* ____________ DESKTOP ____________ */
+/* ____________ DESKTOP ____________ */
+h1 {
+  grid-area: title;
+}
+
+.faqs-all {
+  grid-area: faqs;
+  margin: 20px 0;
+}
+
+/* ____________ MOBILE ____________ */
+/* ____________ MOBILE ____________ */
+/* ____________ MOBILE ____________ */
+/* ____________ MOBILE ____________ */
+/* ____________ MOBILE ____________ */
+/* EQUIPO ---------------------------------------------- */
+h1 {
+  padding: 0 0 35px 0;
+  margin: 0;
+}
+
+.hotel, .socializacion, .guarderia, .traslados, .paseos, .esquilados {
+  margin: 10px 0;
+}
+
+/* _________ burbuja _________ */
+/* _________ titulo _________ */
+.hotel-title, .social-title {
+  font-size: 20px;
+  font-weight: 800;
+  font-style: normal;
+  font-family: "Montserrat";
+  margin-top: 50px;
+}
+
+.paseos-title, .esquilados-title {
+  font-size: 20px;
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* _________ texto _________ */
+.hotel-txt, .social-txt {
+  padding: 10px 25px;
+}
+
+.servicios__bubble {
+  min-width: 100%;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ____________ TABLET ____________ */
+/* ____________ TABLET ____________ */
+/* ____________ TABLET ____________ */
+/* ____________ TABLET ____________ */
+/* ____________ TABLET ____________ */
+@media (min-width: 768px) {
+  .servicios-all {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    grid-column-gap: 15px;
+  }
+  .servicios__bubble {
+    border-radius: 25px;
+  }
+}
+/* ____________ DESKTOP ____________ */
+/* ____________ DESKTOP ____________ */
+/* ____________ DESKTOP ____________ */
+/* ____________ DESKTOP ____________ */
+/* ____________ DESKTOP ____________ */
+@media (min-width: 1200px) {
+  .servicios-all {
+    display: grid;
+    grid-template-columns: 31% 31% 31%;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+  }
+  .servicios__bubble {
+    border-radius: 25px;
+    margin: 0;
+  }
+  .hotel, .socializacion, .guarderia, .traslados, .paseos, .esquilados {
+    margin: 0;
+  }
+  /* _________ burbuja _________ */
+  /* _________ titulo _________ */
+  .hotel-title, .social-title {
+    font-size: 20px;
+    font-weight: 800;
+    font-style: normal;
+    font-family: "Montserrat";
+    margin-top: 50px;
+  }
+  .paseos-title, .esquilados-title {
+    font-size: 20px;
+    font-weight: 800;
+    font-style: normal;
+  }
+  /* _________ texto _________ */
+  .hotel-txt, .social-txt {
+    padding: 10px 25px;
+  }
+  .servicios__bubble {
+    min-width: 100%;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+/* ____________ MOBILE ____________ */
+/* ____________ MOBILE ____________ */
+/* ____________ MOBILE ____________ */
+/* ____________ MOBILE ____________ */
+/* ____________ MOBILE ____________ */
+.contacto {
+  margin: 0;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulario {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #f4f4f4;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mb-3 {
+  width: 100%;
+  margin-bottom: 1rem !important;
+}
+
+.form-label {
+  font-size: 15px;
+  font-weight: 700;
+  font-style: normal;
+  color: #f46c3d;
+  font-family: "Montserrat";
+}
+
+textarea.form-control {
+  min-height: calc(1.5em + 10.75rem + 2px);
+}
+
+.btn-primary {
+  font-size: 15px;
+  font-weight: 600;
+  font-style: normal;
+  background-color: #225d2d;
+  color: #e9e0c4;
+  border-color: #225d2d;
+  font-family: "Montserrat";
+}
+
+.btn-check:active + .btn-primary, .btn-check:checked + .btn-primary, .btn-primary.active, .btn-primary:active, .show > .btn-primary.dropdown-toggle {
+  font-size: 15px;
+  font-weight: 800;
+  font-style: normal;
+  background-color: #93b605;
+  color: #225d2d;
+  border-color: #93b605;
+}
+
+.btn-primary:hover {
+  font-size: 15px;
+  font-weight: 800;
+  font-style: normal;
+  background-color: #eae5d8;
+  color: #225d2d;
+  border-color: #225d2d;
+}
+
+/* ____________ TABLET ____________ */
+/* ____________ TABLET ____________ */
+/* ____________ TABLET ____________ */
+/* ____________ TABLET ____________ */
+/* ____________ TABLET ____________ */
+@media (min-width: 768px) {
+  .mb-3 {
+    width: 80%;
+  }
+  .formulario {
+    width: 80%;
+    border-radius: 35px;
+  }
+  textarea.form-control {
+    min-height: calc(1.5em + 10.75rem + 2px);
+  }
+}
+/* ____________ DESKTOP ____________ */
+/* ____________ DESKTOP ____________ */
+/* ____________ DESKTOP ____________ */
+/* ____________ DESKTOP ____________ */
+/* ____________ DESKTOP ____________ */
+@media (min-width: 1200px) {
+  .h1-contacto {
+    padding: 0 0 25px 0;
+  }
+  .formulario {
+    border-radius: 40px;
+    padding: 70px 40px;
+    margin-bottom: 20px;
+  }
+  .btn-primary {
+    margin-top: 30px;
+  }
+  textarea.form-control {
+    min-height: calc(1.5em + 7.75rem + 2px);
+  }
+}
+/* ____________ MOBILE ____________ */
+/* ____________ MOBILE ____________ */
+/* ____________ MOBILE ____________ */
+/* ____________ MOBILE ____________ */
+/* ____________ MOBILE ____________ */
+h1 {
+  font-size: 30px;
+  font-weight: 800;
+  font-style: normal;
+  color: black;
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+.nosotros, .servicios, .faqs, .contacto {
+  background-color: #eae5d8;
+  padding: 50px 0;
+}
+
+.nosotros__bubble, .servicios__bubble, .faq__bubble {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicios__title {
+  color: white;
+  font-size: 22px;
+  font-weight: 900;
+  font-style: normal;
+  text-align: center;
+  margin: 30px 20px 10px 20px;
+}
+
+.servicios__txt, .faqs__txt {
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  margin: 0 15px 0 15px;
+  padding: 0 20px 30px 20px;
+}
+
+/* ____________ TABLET ____________ */
+/* ____________ TABLET ____________ */
+/* ____________ TABLET ____________ */
+/* ____________ TABLET ____________ */
+/* ____________ TABLET ____________ */
+@media (min-width: 768px) {
+  .nosotros, .servicios, .faqs, .contacto {
+    padding: 50px 20px;
+  }
+  .nosotros__bubble,
+.servicios__bubble,
+.faq__bubble {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .servicios__title {
+    color: white;
+    font-size: 22px;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+    margin: 30px 20px 10px 20px;
+  }
+  .servicios__txt,
+.faqs__txt {
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    margin: 0 15px 0 15px;
+    padding: 0 20px 30px 20px;
+  }
+}
+/* ____________ DESKTOP ____________ */
+/* ____________ DESKTOP ____________ */
+/* ____________ DESKTOP ____________ */
+/* ____________ DESKTOP ____________ */
+/* ____________ DESKTOP ____________ */
+@media (min-width: 1200px) {
+  .faq__bubble {
+    margin: 10px 10px 10px 10px;
+  }
+  .servicios__txt {
+    padding: 5px 50px 50px 50px;
+  }
+}/*# sourceMappingURL=sassstyle.css.map */

@@ -4,45 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <meta name="keywords" content="mascota, perro, hotel, veterinaria, albergue, gato">
+    <meta name="description" content="HOMA | Albergue de mascotas. Equipo profesional y especializado para cuidar a tu mascota | Atención las 24hs de los 365 días del año">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/sassstyle.css">
     <title>nosotros</title>
 </head>
 <body>
     <header>
-        <section>
-            <a class="link" href="../index.html"><img src="../images/i-logo.png" alt="logo geometrico con texto homa"></a>
-        </section>
-        <nav>
-            <ul>
-                <il>
-                    <a href="../index.html">INICIO</a>
-                </il>
-                <il>
-                    <a class=active-link href="nosotros.html">NOSOTROS</a>
-                </il>
-                <il>
-                    <a href="servicios.html">SERVICIOS</a>
-                </il>
-                <il>
-                    <a href="faqs.html">FAQs</a>
-                </il>
-                <il>
-                    <a href="contacto.html">CONTACTO</a>
-                </il>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <div class="navbar-logo">
+                    <img class="img-logo" src="../images/i-logo.png" alt="">
+                    <a class="navbar-brand" href="../index.html">HOMA</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faqs.html">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <h1>NOSOTROS</h1>     
-    </main>
-
-
     <div class="nosotros">
 
+        <main class="nosotros-main">
+            <h1>NOSOTROS</h1>     
+        </main>
+
         <!-- EQUIPO-->
-        <section class="nosotros__bubble equipo" id="equipo">
-            <h2 class="nosotros__title">EQUIPO</h2>
+        <section class="nosotros__bubble equipo">
+            <h2 class="n-title-equipo">EQUIPO</h2>
             <div class="nosotros__cofounders">
                 <div class="cofounder" id="cofounder1">
                     <img class="equipo__icon" src="../images/n-valentina.png" alt="ilustracion de la co-fundadora de homa, valentina">
@@ -56,7 +67,7 @@
             </div>
             
 
-            <p class="nosotros__txt">Somos un staff conformado por cuidadores especializados y veterinarios que brindan las atenciones y cuidados necesarios a los animales alojados en nuestro complejo
+            <p class="equipo-txt">Somos un staff conformado por cuidadores especializados y veterinarios que brindan las atenciones y cuidados necesarios a los animales alojados en nuestro complejo
                 En HOMA, las mascotas aprenden a convivir con otros y pierden el miedo a estar sin sus dueños. </p>
 
             <img class="equipo__img" src="../images/n-equipo.png" alt="ilustracion lineal de todo el equipo de trabajo de homa">
@@ -66,9 +77,9 @@
 
         <!-- COMIENZOS -->
         <section class="nosotros__bubble comienzos" id="comienzos">
-            <h2 class="nosotros__title">COMIENZOS</h2>
+            <h2 class="n-title-comienzos">COMIENZOS</h2>
 
-            <p class="nosotros__txt">Amante de los animales desde que tiene memoria. No le bastaba con tener un perro de mascota que quería dos, y cuando tenía dos, quería tres. Nunca eran suficientes. Un día decidió dedicarse al único rubro donde la frase "cuanto mas animales, mejor" era posible. Estudió la tecnicatura en asistente veterinario y además realizó cursos de adiestramiento canino y protección animal.</p>
+            <p class="comienzos-txt">Amante de los animales desde que tiene memoria. No le bastaba con tener un perro de mascota que quería dos, y cuando tenía dos, quería tres. Nunca eran suficientes. Un día decidió dedicarse al único rubro donde la frase "cuanto mas animales, mejor" era posible. Estudió la tecnicatura en asistente veterinario y además realizó cursos de adiestramiento canino y protección animal.</p>
         </section>
 
 
@@ -76,21 +87,21 @@
         <div class="nosotros__bubble mv" id="mv">
         <!-- MISION -->
             <section class="nosotros__info">
-                <h2 class="nosotros__title">MISION</h2>
-                <p class="nosotros__txt">Buscamos ofrecer a tu mascota un hospedaje divertido, agradable y único, en el que pueda convivir con la naturaleza de una forma libre y pueda desarrollar al máximo sus capacidades y habilidades atendiendo la salud física y psicologica de tu mascota, logrando así el equilibrio y bienestar de uno de los miembros de tu familia, con atención,   compromiso y  responsabilidad</p>
+                <h2 class="mv-title">MISION</h2>
+                <p class="mvv-txt">Buscamos ofrecer a tu mascota un hospedaje divertido, agradable y único, en el que pueda convivir con la naturaleza de una forma libre y pueda desarrollar al máximo sus capacidades y habilidades atendiendo la salud física y psicologica de tu mascota, logrando así el equilibrio y bienestar de uno de los miembros de tu familia, con atención,   compromiso y  responsabilidad</p>
             </section>
     
         <!-- VISION -->
             <section class="nosotros__info">
-                <h2 class="nosotros__title" id="nosotros__title__vision">VISION</h2>
-                <p class="nosotros__txt">Somos un grupo de personas que buscan un reconocimiento a nivel regional, en cuanto a cuidados y hospedaje de mascotas  entregandoles servicios de calidad</p>
+                <h2 class="vision-title">VISION</h2>
+                <p class="mvv-txt">Somos un grupo de personas que buscan un reconocimiento a nivel regional, en cuanto a cuidados y hospedaje de mascotas  entregandoles servicios de calidad</p>
             </section>
         </div>
 
         <!-- VALORES-->
         <section class="nosotros__bubble valores" id="valores">
-            <h2 class="nosotros__title" id="nosotros__subtitle">VALORES</h2>
-            <p class="nosotros__txt">Buscamos ofrecer a tu mascota un hospedaje divertido, agradable y único, en el que pueda convivir con la naturaleza de una forma libre y al mismo tiempo controlada, donde también pueda desarrollar al máximo sus capacidades y habilidades sin descuidar la salud física y psicologica de tu mascota, logrando así el equilibrio y bienestar de uno de los miembros de tu familia, con atención,   compromiso y  responsabilidad</p>
+            <h2 class="valores-title">VALORES</h2>
+            <p class="mvv-txt">Buscamos ofrecer a tu mascota un hospedaje divertido, agradable y único, en el que pueda convivir con la naturaleza de una forma libre y al mismo tiempo controlada, donde también pueda desarrollar al máximo sus capacidades y habilidades sin descuidar la salud física y psicologica de tu mascota, logrando así el equilibrio y bienestar de uno de los miembros de tu familia, con atención,   compromiso y  responsabilidad</p>
         </section>
     </div>
 
@@ -116,5 +127,8 @@
         <h2>Visitanos:</h2>
         <h3>Av. Arocena 4636</h3>
     </section>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
