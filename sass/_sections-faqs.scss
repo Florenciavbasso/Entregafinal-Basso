@@ -4,8 +4,12 @@
 /* ____________ MOBILE ____________ */
 /* ____________ MOBILE ____________ */
 
+
+
 .faqs{
-    min-height: 85vh;
+display: grid;
+grid-template-rows: 100px auto;
+min-height: calc(100vh - 136px);
 }
 
 .faqs__enquiry{
@@ -19,7 +23,7 @@
     margin-bottom: 0;
 }
 
-.accordion-button {
+.accordion-button-faqs {
     background-color: $bg-color-2;
     color: $color-3-txt;
     border: 1.5px solid white;
@@ -34,7 +38,7 @@
 }
 
 .accordion-button:focus {
-    z-index: 3;
+    z-index: 1;
     border-color: $bg-color-1;
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgba(110, 102, 95, 0.37);
@@ -59,13 +63,4 @@
 /* ____________ DESKTOP ____________ */
 /* ____________ DESKTOP ____________ */
 
-h1{
-    grid-area: title;
-}
-
-.faqs-all{
-    grid-area: faqs;
-    margin: 20px 0
-    
-}
 

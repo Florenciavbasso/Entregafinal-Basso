@@ -19,6 +19,11 @@ $txt-light: white;
 
 
 
+/* ________ DIMENSIONES ________ */
+
+$heightheader: 56px;
+$heightfooter: 80px;
+
 /* ________ MIXIN ________ */
 
 @mixin colors ($bgcolor, $color) {

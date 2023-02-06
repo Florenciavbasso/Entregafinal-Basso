@@ -41,6 +41,7 @@ footer{
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: white;
+    height: 60px;
 }
 
 footer section{
@@ -167,6 +168,11 @@ margin-top: 20px;
 
 
 @media (min-width: 600px){
+
+    
+header {
+    height: 56px;
+}
 
     .nav-item{
         font-family: 'Manrope';

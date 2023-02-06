@@ -7,18 +7,23 @@
 
 /* EQUIPO ---------------------------------------------- */
 
-h1 {
-    padding: 0 0 35px 0;
-    margin: 0;
+.nosotros{
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-row-gap: 10px;
+    background-color: $bg-color-1;
 }
 
 .nosotros__bubble {
-    margin: 10px 0;
+    margin: 0;
     border-radius: 0px;
+    justify-content: space-between;
+
 }
 
 .equipo {
     @extend .albergue-txt;
+    padding: 30px 30px 0 30px;
 }
 
 .n-title-equipo {
@@ -32,7 +37,8 @@ h1 {
 .equipo-txt {
     @extend .i-txt;
     @extend .i-txt-albergue;
-    padding: 10px 25px;
+    margin: 10px 40px 25px 40px;
+    padding: 0;
 }
 
 .nosotros__cofounders {
@@ -70,7 +76,12 @@ h1 {
 
 .equipo__img {
     max-width: 90%;
-    margin-top: 20px;
+}
+
+.nosotros__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* COMIENZOS ---------------------------------------------- */
@@ -90,11 +101,22 @@ h1 {
     @extend .i-txt-huespedes;
 }
 
+.comienzos{
+    justify-content: space-around;
+    padding: 30px;
+}
+
 /* MISION VISION VALORES ---------------------------------------------- */
 
 .mv,
 .valores {
     @extend .index__ribbon;
+    height: auto;
+    max-height: 600px;
+    width: 100%;
+    padding: 0;
+    justify-content: space-around;
+    padding: 30px;
 }
 
 .mv-title,
@@ -111,6 +133,11 @@ h1 {
 
 }
 
+#mv{
+    height: auto;
+    max-height: 700px;
+}
+
 /* ____________ TABLET ____________ */
 /* ____________ TABLET ____________ */
 /* ____________ TABLET ____________ */
@@ -119,6 +146,14 @@ h1 {
 
 @media (min-width: 768px) {
 
+    .nosotros{
+        grid-row-gap: 50px;
+    }
+
+    .equipo{
+        min-height: 600px;
+    }
+
     .equipo__img {
         max-width: 550px;
         margin-top: 40px;
@@ -126,8 +161,23 @@ h1 {
 
     .nosotros__bubble {
         border-radius: 25px;
-        margin: 20px 0px 20px 0px;
     }
+
+    .comienzos{
+        min-height: 300px;
+    }
+
+    .mv{
+        min-height: 400px;
+    }
+
+    .vision{
+        min-height: 200px;
+    }
+
+.n-title-comienzos{
+    margin: 0;
+}
 
 }
 
@@ -156,9 +206,12 @@ h1 {
 
     .equipo {
         @extend .albergue-txt;
-        border-radius: 35px 35px 0 0;
+        border-radius: 35px  0 0 35px;
         grid-area: equipo;
-        margin-bottom: 3px
+        margin: 0;
+        min-height: 300px;
+        justify-content: space-around;
+    padding: 30px 60px;
     }
 
     .n-title-equipo {
@@ -166,20 +219,24 @@ h1 {
         @extend .it-albergue;
         @include font (20px, 800, normal);
         font-family: 'Montserrat';
-        margin: 60px 0 100px 0
+        margin: 0
     }
 
     .equipo-txt {
         @extend .i-txt;
         @extend .i-txt-albergue;
         text-align: center;
-        padding: 10px 40px;
-        margin: 30px;
+        padding: 0;
+        margin: 0;
     }
 
     .equipo__img {
-        max-width: 85%;
+        max-width: 50%;
         margin-top: 20px;
+    }
+
+    .nosotros__cofounders, .equipo__img{
+        display: none;
     }
 
 
@@ -188,8 +245,9 @@ h1 {
 
     .comienzos {
         grid-area: comienzos;
-        border-radius: 0 0 35px 35px;
-        margin-top: 3px;
+        border-radius: 0 35px 35px 0;
+        padding: 30px 60px;
+        margin: 0;
     }
 
     /* MISION VISION VALORES ---------------------------------------------- */
@@ -197,8 +255,7 @@ h1 {
     .mv {
         grid-area: mv;
         border-radius: 35px 0 0 35px;
-        margin-right: 3px;
-        margin-left: 10px;
+        margin: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -208,8 +265,7 @@ h1 {
     .valores {
         grid-area: valores;
         border-radius: 0 35px 35px 0;
-        margin-right: 10px;
-        margin-left: 3px;
+        margin:0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -218,18 +274,23 @@ h1 {
 
     .nosotros {
         display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas:
-            "title title title title title"
-            "equipo equipo equipo mv valores"
-            "equipo equipo equipo mv valores"
-            "equipo equipo equipo mv valores"
-            "comienzos comienzos comienzos mv valores";
+            "title title title title title title"
+            "equipo equipo equipo comienzos comienzos comienzos"
+            "equipo equipo equipo comienzos comienzos comienzos"
+            "mv mv mv mv valores valores"
+            "mv mv mv mv valores valores";
+                        ;
+        grid-gap: 5px;
+        grid-row-gap: 20px;
     }
 
     #mv,
     #valores {
         align-items: center;
-        justify-content: flex-start;
+        justify-content: space-around;
+        padding: 30px 60px;
     }
 
     .nosotros-main{

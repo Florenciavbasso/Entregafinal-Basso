@@ -9,17 +9,32 @@
 /* ____________ MOBILE ____________ */
 /* ____________ MOBILE ____________ */
 
+.section-body{
+    display: grid;
+    grid-template-rows: auto auto $heightfooter;
+    min-height: 100vh
+}
+
+.section-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px
+
+}
 
     h1{
         @include font (30px, 800, normal);
         color: $txt-dark;
         font-family: 'Montserrat';
         text-align: center;
+        margin: 0;
+        padding: 0;
     }
 
     .nosotros, .servicios, .faqs, .contacto{
         background-color: $bg-color-1;
-        padding: 50px 0;
+        padding: 10px 0;
     }
     .nosotros__bubble, .servicios__bubble, .faq__bubble{
         display: flex;
@@ -50,10 +65,18 @@
 /* ____________ TABLET ____________ */
 /* ____________ TABLET ____________ */
 
+@media (min-width: 600px){
+.section-body{
+    display: grid;
+    grid-template-rows: 56px auto $heightfooter;
+    min-height: 100vh;
+}
+}
+
 @media (min-width: 768px){
 
     .nosotros, .servicios, .faqs, .contacto{
-        padding: 50px 20px;
+        padding: 50px 30px 20px 30px;
     }
 
 .nosotros__bubble,
@@ -98,6 +121,10 @@
 
 .servicios__txt{
     padding: 5px 50px 50px 50px;
+}
+
+.section-main {
+    justify-content: flex-start;
 }
 
 
