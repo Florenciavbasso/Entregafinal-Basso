@@ -1101,11 +1101,11 @@ main img {
 /* ____________ MOBILE ____________ */
 /* ____________ MOBILE ____________ */
 .servicios-body {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .servicios {
-  height: calc(100vh - 136px);
+  min-height: calc(100vh - 136px);
   display: grid;
   grid-template-rows: 100px auto;
   grid-row-gap: 10px;
