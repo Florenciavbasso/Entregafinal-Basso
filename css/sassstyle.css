@@ -15,6 +15,10 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 
+a:link {
+  text-decoration: none;
+}
+
 footer h2 {
   font-size: 12px;
   font-weight: 550;
@@ -28,6 +32,7 @@ footer h3 {
   color: rgb(133, 133, 133);
   font-weight: 200;
   text-align: center;
+  margin-bottom: 5px;
 }
 
 footer {
@@ -59,6 +64,7 @@ footer img {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 
 .link {
@@ -237,6 +243,7 @@ footer img {
 .index-body {
   display: grid;
   grid-template-rows: auto 90vh 150px 510px auto auto 80px;
+  width: 100%;
 }
 
 .index__main {
@@ -530,7 +537,7 @@ main img {
 /* ________________ TABLET ________________ */
 @media (min-width: 768px) {
   .index__ribbon, .mv,
-.valores, .index__opiniones {
+  .valores, .index__opiniones {
     margin: 20px 30px;
     border-radius: 25px;
     width: 100%;
@@ -565,8 +572,8 @@ main img {
     margin: 10px 30px;
   }
   .i-title, .mv-title,
-.vision-title,
-.valores-title, .n-title-equipo, .n-title-comienzos, .it-opiniones {
+  .vision-title,
+  .valores-title, .n-title-equipo, .n-title-comienzos, .it-opiniones {
     margin: 15px 0 0 0;
   }
   .index__images {
@@ -590,8 +597,8 @@ main img {
     justify-content: space-between;
   }
   .it-opiniones, .mv-title,
-.vision-title,
-.valores-title {
+  .vision-title,
+  .valores-title {
     height: 15px;
   }
   .opiniones-txt {
@@ -614,7 +621,8 @@ main img {
 @media (min-width: 1200px) {
   .index-body {
     display: grid;
-    grid-template-rows: 56px 65vh 300px 400px auto 350px 80px;
+    grid-template-rows: 56px auto 300px 400px auto 350px 80px;
+    width: 100%;
   }
   .index__main {
     display: grid;
@@ -647,9 +655,10 @@ main img {
     font-weight: 400;
     font-style: normal;
     font-family: "Manrope";
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    line-height: 25px;
     margin: 0;
-    padding: 0;
+    padding: 0 100px 0 0;
   }
   .main__img {
     display: flex;
@@ -661,6 +670,7 @@ main img {
     margin: 0;
     width: 85%;
     max-height: 100%;
+    padding-top: 100px;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: bottom;
@@ -673,7 +683,7 @@ main img {
     align-items: center;
   }
   .index__ribbon, .mv,
-.valores, .index__opiniones {
+  .valores, .index__opiniones {
     width: 100%;
     margin: 0px 80px;
     padding: 25px;
@@ -704,9 +714,15 @@ main img {
     background-color: #eae5d8;
     border-radius: 0;
     padding: 80px;
+    max-height: 100%;
   }
-  .carousel-inner {
+  .car-in-img {
     border-radius: 30px;
+    width: auto;
+  }
+  .car-item-opiniones {
+    width: 100%;
+    height: 70%;
   }
   .index__info {
     display: flex;
@@ -742,8 +758,8 @@ main img {
     border-bottom-right-radius: 30px;
   }
   .i-title, .mv-title,
-.vision-title,
-.valores-title, .n-title-equipo, .n-title-comienzos, .it-opiniones {
+  .vision-title,
+  .valores-title, .n-title-equipo, .n-title-comienzos, .it-opiniones {
     font-size: 28px;
     font-weight: 900;
     font-style: normal;
@@ -777,16 +793,16 @@ main img {
   .opiniones {
     display: flex;
     align-items: flex-start;
+    width: 100vw;
   }
   .index__opiniones {
     flex-direction: column;
     align-items: center;
     height: 80%;
-    width: 100%;
   }
   .it-opiniones, .mv-title,
-.vision-title,
-.valores-title {
+  .vision-title,
+  .valores-title {
     color: #f46c3d;
     text-align: center;
     margin-bottom: 30px;
@@ -870,17 +886,11 @@ main img {
 }
 
 .equipo__icon {
-  max-width: 60px;
+  max-width: 40px;
 }
 
 .equipo__img {
-  max-width: 90%;
-}
-
-.nosotros__info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  max-width: 80%;
 }
 
 /* COMIENZOS ---------------------------------------------- */
@@ -898,6 +908,12 @@ main img {
   padding: 0;
   justify-content: space-around;
   padding: 30px;
+}
+
+.nosotros__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .mv-title,
@@ -955,9 +971,15 @@ main img {
 /* ____________ DESKTOP ____________ */
 /* ____________ DESKTOP ____________ */
 @media (min-width: 1200px) {
-  h1 {
-    padding: 0 0 35px 0;
-    margin: 0;
+  .nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "title title title title title title" "equipo equipo equipo comienzos comienzos comienzos" "equipo equipo equipo comienzos comienzos comienzos" "mv mv mv mv valores valores" "mv mv mv mv valores valores";
+    grid-gap: 5px;
+    grid-row-gap: 20px;
+  }
+  .nosotros-main {
+    grid-area: title;
   }
   /* EQUIPO ---------------------------------------------- */
   .nosotros__bubble {
@@ -1014,21 +1036,11 @@ main img {
     flex-direction: column;
     align-items: center;
   }
-  .nosotros {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "title title title title title title" "equipo equipo equipo comienzos comienzos comienzos" "equipo equipo equipo comienzos comienzos comienzos" "mv mv mv mv valores valores" "mv mv mv mv valores valores";
-    grid-gap: 5px;
-    grid-row-gap: 20px;
-  }
   #mv,
-#valores {
+  #valores {
     align-items: center;
     justify-content: space-around;
     padding: 30px 60px;
-  }
-  .nosotros-main {
-    grid-area: title;
   }
 }
 /* ____________ MOBILE ____________ */
@@ -1042,21 +1054,15 @@ main img {
   min-height: calc(100vh - 136px);
 }
 
-.faqs__enquiry {
-  margin: 30px 15px 30px 15px;
-}
-
-#faqs__question {
-  font-size: 15px;
-  font-weight: 500;
-  padding-bottom: 10px;
-  margin-bottom: 0;
-}
-
 .accordion-button-faqs {
   background-color: #f4f4f4;
   color: #f46c3d;
   border: 1.5px solid white;
+}
+
+.faqs-question {
+  padding-right: 30px;
+  margin: 0;
 }
 
 .accordion-button:not(.collapsed) {
@@ -1099,12 +1105,14 @@ main img {
 }
 
 .servicios {
+  height: calc(100vh - 136px);
   display: grid;
   grid-template-rows: 100px auto;
   grid-row-gap: 10px;
   background-color: #eae5d8;
 }
 
+/* ________ ACCORDION GENERAL ________ */
 .accordion-servicios {
   display: flex;
   flex-direction: column;
@@ -1139,10 +1147,6 @@ main img {
   font-family: "Manrope";
   text-align: center;
   padding: 50px;
-}
-
-.servicios-title {
-  margin: 0;
 }
 
 /* ____________ Estilos ____________ */
@@ -1503,24 +1507,6 @@ h1 {
   align-items: center;
 }
 
-.servicios__title {
-  color: white;
-  font-size: 22px;
-  font-weight: 900;
-  font-style: normal;
-  text-align: center;
-  margin: 30px 20px 10px 20px;
-}
-
-.servicios__txt, .faqs__txt {
-  font-size: 16px;
-  font-weight: 300;
-  font-style: normal;
-  text-align: center;
-  margin: 0 15px 0 15px;
-  padding: 0 20px 30px 20px;
-}
-
 /* ____________ TABLET ____________ */
 /* ____________ TABLET ____________ */
 /* ____________ TABLET ____________ */
@@ -1537,30 +1523,6 @@ h1 {
   .nosotros, .servicios, .faqs, .contacto {
     padding: 50px 30px 20px 30px;
   }
-  .nosotros__bubble,
-.servicios__bubble,
-.faq__bubble {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .servicios__title {
-    color: white;
-    font-size: 22px;
-    font-weight: 900;
-    font-style: normal;
-    text-align: center;
-    margin: 30px 20px 10px 20px;
-  }
-  .servicios__txt,
-.faqs__txt {
-    font-size: 16px;
-    font-weight: 300;
-    font-style: normal;
-    text-align: center;
-    margin: 0 15px 0 15px;
-    padding: 0 20px 30px 20px;
-  }
 }
 /* ____________ DESKTOP ____________ */
 /* ____________ DESKTOP ____________ */
@@ -1568,11 +1530,15 @@ h1 {
 /* ____________ DESKTOP ____________ */
 /* ____________ DESKTOP ____________ */
 @media (min-width: 1200px) {
-  .faq__bubble {
-    margin: 10px 10px 10px 10px;
+  h1 {
+    padding: 0 0 35px 0;
+    margin: 0;
   }
-  .servicios__txt {
-    padding: 5px 50px 50px 50px;
+  .nosotros,
+  .servicios,
+  .faqs,
+  .contacto {
+    padding: 50px 100px 20px 100px;
   }
   .section-main {
     justify-content: flex-start;

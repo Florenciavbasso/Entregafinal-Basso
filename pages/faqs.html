@@ -7,6 +7,7 @@
     <meta name="keywords" content="mascota, perro, hotel, veterinaria, albergue, gato, pago, tarjeta, debito, credito">
     <meta name="description" content="HOMA | Albergue de mascotas. Nosotros nos encargamos de todo | Aceptamos todos los medios de pago">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/sassstyle.css">
     <link rel="icon" href="../images/i-logo.png" type="image/svg"/>
     <title>HOMA | FAQs</title>
@@ -37,7 +38,7 @@
                             <a class="nav-link" href="servicios.html">SERVICIOS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="faqs.html">FAQs</a>
+                            <a  data-aos="flip-up" class="nav-link active" href="faqs.html">FAQs</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contacto.html">CONTACTO</a>
@@ -53,134 +54,136 @@
             <h1 class="faq__title">PREGUNTAS FRECUENTES</h1>
         </main>
 
-        <section class="faqs-all">
-            <div class="accordion" id="accordionPanelsStayOpenExample">
 
-                <!-- ____________PREGUNTA 1____________ -->
+        <div class="accordion" id="accordionPanelsStayOpenExample">
 
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                        <button class="accordion-button accordion-button-faqs collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
-                            aria-controls="panelsStayOpen-collapseOne">
-                            ¿Cuáles son los requisitos para que mi mascota sea apta para ingresar en HOMA?
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
-                        aria-labelledby="panelsStayOpen-headingOne">
-                        <div class="accordion-body">
-                            <strong>Los requisitos principales </strong> son que tenga su carnet de vacunas al
-                            día, que esté
-                            desparasitado y que no esté cursando ninguna enfermedad contagiosa. Es importante
-                            que tu mascota
-                            tenga buen carácter con las personas y frente a otros animales, pero en caso de que
-                            no lo sea
-                            podemos ofrecerte el servicio de adiestrador para ayudarlo a mejorarlo.
-                        </div>
-                    </div>
-                </div>
+            <!-- ____________PREGUNTA 1____________ -->
 
-
-                <!-- ____________PREGUNTA 2____________ -->
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                        <button class="accordion-button accordion-button-faqs collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                            aria-controls="panelsStayOpen-collapseTwo">
-                            ¿Sólo aceptan perros?
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
-                        aria-labelledby="panelsStayOpen-headingTwo">
-                        <div class="accordion-body">
-                            <strong>No.</strong> Aceptamos también gatos y animales domésticos de mediano tamaño
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ____________PREGUNTA 3____________ -->
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                        <button class="accordion-button accordion-button-faqs collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                            aria-controls="panelsStayOpen-collapseThree">
-                            ¿Como puedo abonar la estadía o paseo de mi mascota?
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
-                        aria-labelledby="panelsStayOpen-headingThree">
-                        <div class="accordion-body">
-                            <strong>Aceptamos todos los medios de pago.</strong> Todos nuestros servicios pueden
-                            ser abonados en efectivo, con tarjetas de crédito y debito Visa o MasterCard y
-                            también a traves de plataformas de pago como paypal o mercadopago
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ____________PREGUNTA 4____________ -->
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-                        <button class="accordion-button accordion-button-faqs collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
-                            aria-controls="panelsStayOpen-collapseFour">
-                            ¿Que sucede si no tengo como llevar a mi mascota al albergue?
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
-                        aria-labelledby="panelsStayOpen-headingFour">
-                        <div class="accordion-body">
-                            <strong>¡No te preocupes! Nosotros nos encargamos de todo.</strong> Desde HOMA
-                            ofrecemos el servicio de traslados, ya sea para llevar y traer a tu mascota desde tu
-                            hogar al albergue o cualquier otro punto que necesites
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ____________PREGUNTA 5____________ -->
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingFive">
-                        <button class="accordion-button accordion-button-faqs collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
-                            aria-controls="panelsStayOpen-collapseFive">
-                            ¿En que horario puedo dejar a mi mascota en el albergue?
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
-                        aria-labelledby="panelsStayOpen-headingFive">
-                        <div class="accordion-body">
-                            <strong>Estamos abiertos al público de Lunes a Sábado de 09:00hs a
-                                19:00hs.</strong>Sin embargo tenemos atención para los animales las 24hs del día
-                            los 7 días a la semana. El único día que no podrás traer o pasar a buscar a tu
-                            mascota es los domingos. Pero puedes dejarlo desde el sábado hasta lunes.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ____________PREGUNTA 6____________ -->
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingSix">
-                        <button class="accordion-button accordion-button-faqs collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
-                            aria-controls="panelsStayOpen-collapseSix">
-                            ¿Puedo cancelar la estadía de mi mascota?
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
-                        aria-labelledby="panelsStayOpen-headingSix">
-                        <div class="accordion-body">
-                            <strong>Si. Las reservas o agendas pueden ser canceladas hasta 48hs antes del hora
-                                pactada.</strong> En caso de que se cancele despues de pasadas estas horas, se
-                            deberá abonar el 50% del valor de lo reservado
-                        </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button accordion-button-faqs collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        <p class="faqs-question">¿Cuáles son los requisitos para que mi mascota sea apta para ingresar
+                            en HOMA?</p>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        <strong>Los requisitos principales </strong> son que tenga su carnet de vacunas al
+                        día, que esté
+                        desparasitado y que no esté cursando ninguna enfermedad contagiosa. Es importante
+                        que tu mascota
+                        tenga buen carácter con las personas y frente a otros animales, pero en caso de que
+                        no lo sea
+                        podemos ofrecerte el servicio de adiestrador para ayudarlo a mejorarlo.
                     </div>
                 </div>
             </div>
-        </section>
+
+
+            <!-- ____________PREGUNTA 2____________ -->
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button accordion-button-faqs collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        <p class="faqs-question">¿Sólo aceptan perros?</p>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        <strong>No.</strong> Aceptamos también gatos y animales domésticos de mediano tamaño
+                    </div>
+                </div>
+            </div>
+
+            <!-- ____________PREGUNTA 3____________ -->
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button accordion-button-faqs collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        <p class="faqs-question">¿Cómo puedo abonar la estadía o paseo de mi mascota?</p>
+
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        <strong>Aceptamos todos los medios de pago.</strong> Todos nuestros servicios pueden
+                        ser abonados en efectivo, con tarjetas de crédito y debito Visa o MasterCard y
+                        también a traves de plataformas de pago como paypal o mercadopago
+                    </div>
+                </div>
+            </div>
+
+            <!-- ____________PREGUNTA 4____________ -->
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                    <button class="accordion-button accordion-button-faqs collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFour">
+                        <p class="faqs-question">¿Qué sucede si no tengo como llevar a mi mascota al albergue?</p>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingFour">
+                    <div class="accordion-body">
+                        <strong>¡No te preocupes! Nosotros nos encargamos de todo.</strong> Desde HOMA
+                        ofrecemos el servicio de traslados, ya sea para llevar y traer a tu mascota desde tu
+                        hogar al albergue o cualquier otro punto que necesites
+                    </div>
+                </div>
+            </div>
+
+            <!-- ____________PREGUNTA 5____________ -->
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                    <button class="accordion-button accordion-button-faqs collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFive">
+                        <p class="faqs-question">¿En qué horario puedo dejar a mi mascota en el albergue?</p>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingFive">
+                    <div class="accordion-body">
+                        <strong>Estamos abiertos al público de Lunes a Sábado de 09:00hs a
+                            19:00hs.</strong>Sin embargo tenemos atención para los animales las 24hs del día
+                        los 7 días a la semana. El único día que no podrás traer o pasar a buscar a tu
+                        mascota es los domingos. Pero puedes dejarlo desde el sábado hasta lunes.
+                    </div>
+                </div>
+            </div>
+
+            <!-- ____________PREGUNTA 6____________ -->
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                    <button class="accordion-button accordion-button-faqs collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseSix">
+                        <p class="faqs-question">¿Puedo cancelar la estadía de mi mascota?</p>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingSix">
+                    <div class="accordion-body">
+                        <strong>Si. Las reservas o agendas pueden ser canceladas hasta 48hs antes del hora
+                            pactada.</strong> En caso de que se cancele despues de pasadas estas horas, se
+                        deberá abonar el 50% del valor de lo reservado
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </section>
 
@@ -205,17 +208,21 @@
 
         <section>
             <h2>Contactanos:</h2>
-            <h3>+598 98 454 668</h3>
+            <h3>+598 98 250 388</h3>
             <h3>hola@homa.com.uy</h3>
         </section>
 
         <section>
             <h2>Visitanos:</h2>
-            <h3>Av. Arocena 4636</h3>
+            <h3>Elbio Maneiro 4251</h3>
+            <h3>Ciudad de la Costa</h3>
         </section>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

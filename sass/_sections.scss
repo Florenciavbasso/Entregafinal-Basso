@@ -42,28 +42,15 @@
         align-items: center;
     }
 
-.servicios__title{
-        color: $txt-light;
-        @include font (22px, 900, normal);
-        text-align: center;
-        margin: 30px 20px 10px 20px;
-    }
-    
-    
-    
-.servicios__txt, .faqs__txt{
-        @include font (16px, 300, normal);
-        text-align: center;
-        margin: 0 15px 0 15px;
-        padding: 0 20px 30px 20px;
-    }
-    
+
 
 /* ____________ TABLET ____________ */
 /* ____________ TABLET ____________ */
 /* ____________ TABLET ____________ */
 /* ____________ TABLET ____________ */
 /* ____________ TABLET ____________ */
+
+
 
 @media (min-width: 600px){
 .section-body{
@@ -79,29 +66,6 @@
         padding: 50px 30px 20px 30px;
     }
 
-.nosotros__bubble,
-.servicios__bubble,
-.faq__bubble {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.servicios__title {
-    color: $txt-light;
-    @include font (22px, 900, normal);
-    text-align: center;
-    margin: 30px 20px 10px 20px;
-}
-
-
-.servicios__txt,
-.faqs__txt {
-    @include font (16px, 300, normal);
-    text-align: center;
-    margin: 0 15px 0 15px;
-    padding: 0 20px 30px 20px;
-}
 
 }
 
@@ -115,17 +79,22 @@
 
 @media (min-width: 1200px){
 
-.faq__bubble{
-    margin: 10px 10px 10px 10px;
-}
 
-.servicios__txt{
-    padding: 5px 50px 50px 50px;
-}
+    h1 {
+        padding: 0 0 35px 0;
+        margin: 0;
+    }
 
-.section-main {
-    justify-content: flex-start;
-}
+    .nosotros,
+    .servicios,
+    .faqs,
+    .contacto {
+        padding: 50px 100px 20px 100px;
+    }
+
+    .section-main {
+        justify-content: flex-start;
+    }
 
 
 }

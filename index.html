@@ -7,6 +7,7 @@
     <meta name="keywords" content="mascota, perro, hotel, veterinaria, albergue, gato">
     <meta name="description" content="HOMA | Albergue de mascotas. Hotel - Guardería - Paseos - Traslados - Socialización | Atención las 24hs de los 365 días del año">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/sassstyle.css">
     <link rel="icon" href="./images/i-logo.png" type="image/svg"/>
     <title>HOMA | INICIO</title>
@@ -14,8 +15,8 @@
 <body class="index-body">
 
 
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <header data-aos="fade-down">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
                     <div class="navbar-logo">
                         <img class="img-logo" src="./images/i-logo.png" alt="">
@@ -49,20 +50,26 @@
         </header>
     
         <main class="index__main">
-            <div class="main__txt">
-                <h1 class="main__title">tu amigo más fiel con la mejor compañía</h1>
+            <div data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" class="main__txt">
+                <h1 class="main__title">Tu amigo más fiel con la mejor compañía</h1>
                 <h2 class="main__title" id="main__subtitle">Nos hacemos cargo de tu mascota para que se sienta como en
                     casa esos días que no vas a estar </h2>
             </div>
             <div class="main__img">
-                <img src="./images/main-perro.png" alt="Perro con nieve en la nariz">
+                <img data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" src="./images/main-perro.png" alt="perro con la cabeza de costado">
             </div>
         </main>
 
 
 
     <section class="ribbon">
-        <div class="index__ribbon">
+        <div data-aos="zoom-in-up"
+        data-aos-delay="300"
+        data-aos-offset="0" class="index__ribbon">
             <div class="ribbon__txt">
                 <h2 class="ribbon__h2">+70</h2>
                 <h3 class="ribbon__h3">huéspedes que nos eligen</h3>
@@ -123,46 +130,41 @@
                     aria-label="Slide 9"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"
                     aria-label="Slide 10"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10"
-                    aria-label="Slide 11"></button>
             </div>
-            <div class="carousel-inner">
+            <div class="carousel-inner car-in-img">
                 <div class="carousel-item active">
                     <img src="./images/i-relax.jpg" class="d-block w-100"
-                        alt="perros negros mojados en la orilla de un rio">
+                        alt="perro con la cabeza apoyada">
                 </div>
                 <div class="carousel-item">
-                    <img src="./images/i-paseos-playa.jpg" class="d-block w-100" alt="perro marron en su cucha">
+                    <img src="./images/i-paseos-playa.jpg" class="d-block w-100" alt="perro acostado en la arena de playa">
                 </div>
                 <div class="carousel-item">
                     <img src="./images/i-parque.jpg" class="d-block w-100"
-                        alt="ovejeros alemanes corriendo y jugando">
+                        alt="perro peludo recostado en el pasto">
                 </div>
                 <div class="carousel-item">
-                    <img src="./images/i-perro-traslados.jpg" class="d-block w-100" alt="zona de recreacion de huespedes">
+                    <img src="./images/i-perro-traslados.jpg" class="d-block w-100" alt="perro en camioneta siendo trasladado">
                 </div>
                 <div class="carousel-item">
-                    <img src="./images/i-hotel-lago.jpg" class="d-block w-100" alt="fachada interior del hotel">
+                    <img src="./images/i-hotel-lago.jpg" class="d-block w-100" alt="perro en el muelle con la cuidadora">
                 </div>
                 <div class="carousel-item">
-                    <img src="./images/i-cachorros-hotel.jpg" class="d-block w-100" alt="perro descansando en su cucha">
+                    <img src="./images/i-cachorros-hotel.jpg" class="d-block w-100" alt="4 cahorros acostados en una manta de lana">
                 </div>
                 <div class="carousel-item">
                     <img src="./images/i-campo.jpg" class="d-block w-100"
-                        alt="perro corriendo hacia el agua del lago">
+                        alt="cachorro disfrutando del campo del hotel">
                 </div>
                 <div class="carousel-item">
                     <img src="./images/i-ocio-amigos.jpg" class="d-block w-100"
-                        alt="perro jugando en el sector parquizado">
+                        alt="4 perros sentados en el parque">
                 </div>
                 <div class="carousel-item">
-                    <img src="./images/i-paseo-perro.jpg" class="d-block w-100" alt="perros jugando en la psicina">
+                    <img src="./images/i-paseo-perro.jpg" class="d-block w-100" alt="perro golden retriever siendo paseado por paseador en un parque">
                 </div>
                 <div class="carousel-item">
-                    <img src="./images/i-banos.jpg" class="d-block w-100" alt="perro en un paseo por el muelle">
-                </div>
-                <div class="carousel-item">
-                    <img src="./images/i-hotel-lago.jpg" class="d-block w-100" alt="perro nadando en la piscina">
+                    <img src="./images/i-banos.jpg" class="d-block w-100" alt="perro bañado en la bañera">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -182,8 +184,8 @@
         <div class="index__opiniones">
             <h3 class="it-opiniones">OPINIONES</h3>
             <div class="opiniones-txt">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" >
+                    <div class="carousel-inner car-in-opiniones">
 
                         <div class="carousel-item active">
                             <div class="o-test">
@@ -194,7 +196,7 @@
                             </div>
                         </div>
 
-                        <div class="carousel-item">
+                        <div class="carousel-item car-item-opiniones">
                             <div class="o-test">
                                 <p class="o-test-txt">"Me ayudaron un montón a regularizarle la energía con los paseos
                                     ya
@@ -202,13 +204,13 @@
                                     día y
                                     le encantó. Desde ese momento que la llevo todas las semanas"</p>
                                 <p class="firma">
-                                    Andrea
+                                    Andre
                                 </p>
                             </div>
                         </div>
 
 
-                        <div class="carousel-item">
+                        <div class="carousel-item car-item-opiniones">
                             <div class="o-test">
                                 <p class="o-test-txt">"Mando a mi perro con tranquilidad ya que son de confianza. Super
                                     agradable el trato con nosotros y estamos super conformes. Es nuestra opción!" </p>
@@ -216,7 +218,7 @@
                             </div>
                         </div>
 
-                        <div class="carousel-item">
+                        <div class="carousel-item car-item-opiniones">
                             <div class="o-test">
                                 <p class="o-test-txt">"Lo súper recomiendo! Un lugar con mucho amor para los animales!
                                     Con
@@ -228,7 +230,7 @@
                         </div>
 
 
-                        <div class="carousel-item">
+                        <div class="carousel-item car-item-opiniones">
                             <div class="o-test">
                                 <p class="o-test-txt">"Excelente! Mi perra vino super contenta y cansada, se nota que
                                     jugó
@@ -239,7 +241,7 @@
                             </div>
                         </div>
 
-                        <div class="carousel-item">
+                        <div class="carousel-item car-item-opiniones">
                             <div class="o-test">
                                 <p class="o-test-txt">"Estoy muy contenta de haberlos encontrado, me salvaron de dejar a
                                     mi perro en una guardería y ahora puedo estar tranquila de que lo van a estar
@@ -277,16 +279,21 @@
 
         <section>
             <h2>Contactanos:</h2>
-            <h3>+598 98 454 668</h3>
+            <h3>+598 98 250 388</h3>
             <h3>hola@homa.com.uy</h3>
         </section>
 
         <section>
             <h2>Visitanos:</h2>
-            <h3>Av. Arocena 4636</h3>
+            <h3>Elbio Maneiro 4251</h3>
+            <h3>Ciudad de la Costa</h3>
         </section>
 
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

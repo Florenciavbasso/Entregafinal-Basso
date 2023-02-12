@@ -71,23 +71,19 @@
 }
 
 .equipo__icon {
-    max-width: 60px;
+    max-width: 40px;
 }
 
 .equipo__img {
-    max-width: 90%;
-}
-
-.nosotros__info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: 80%;
 }
 
 /* COMIENZOS ---------------------------------------------- */
 
 .comienzos {
     @extend .huespedes-txt;
+    justify-content: space-around;
+    padding: 30px;
 }
 
 
@@ -101,11 +97,6 @@
     @extend .i-txt-huespedes;
 }
 
-.comienzos{
-    justify-content: space-around;
-    padding: 30px;
-}
-
 /* MISION VISION VALORES ---------------------------------------------- */
 
 .mv,
@@ -117,6 +108,12 @@
     padding: 0;
     justify-content: space-around;
     padding: 30px;
+}
+
+.nosotros__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .mv-title,
@@ -136,6 +133,8 @@
 #mv{
     height: auto;
     max-height: 700px;
+
+
 }
 
 /* ____________ TABLET ____________ */
@@ -190,11 +189,25 @@
 
 @media (min-width: 1200px) {
 
-    h1 {
-        padding: 0 0 35px 0;
-        margin: 0;
+
+    .nosotros {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "title title title title title title"
+            "equipo equipo equipo comienzos comienzos comienzos"
+            "equipo equipo equipo comienzos comienzos comienzos"
+            "mv mv mv mv valores valores"
+            "mv mv mv mv valores valores";
+                        ;
+        grid-gap: 5px;
+        grid-row-gap: 20px;
     }
-    
+
+    .nosotros-main{
+        grid-area: title;
+    }
+
 
 
     /* EQUIPO ---------------------------------------------- */
@@ -271,21 +284,6 @@
         align-items: center;
     }
 
-
-    .nosotros {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-            "title title title title title title"
-            "equipo equipo equipo comienzos comienzos comienzos"
-            "equipo equipo equipo comienzos comienzos comienzos"
-            "mv mv mv mv valores valores"
-            "mv mv mv mv valores valores";
-                        ;
-        grid-gap: 5px;
-        grid-row-gap: 20px;
-    }
-
     #mv,
     #valores {
         align-items: center;
@@ -293,9 +291,7 @@
         padding: 30px 60px;
     }
 
-    .nosotros-main{
-        grid-area: title;
-    }
+
 
 }
 

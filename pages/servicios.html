@@ -7,13 +7,14 @@
     <meta name="keywords" content="homa, mascota, perro, hotel, veterinaria, albergue, gato, paseos, guarderia, traslados, esquilados, adiestramiento, socializacion">
     <meta name="description" content="HOMA | Albergue de mascotas. Hotel - Guardería - Paseos - Traslados - Socialización - Esquilados | Atención las 24hs de los 365 días del año">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/sassstyle.css">
     <link rel="icon" href="../images/i-logo.png" type="image/svg"/>
     <title>HOMA | Servicios</title>
 </head>
 
 <body class="section-body servicios-body">
-    <header>
+    <header >
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <div class="navbar-logo">
@@ -33,7 +34,7 @@
                             <a class="nav-link" href="nosotros.html">NOSOTROS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="servicios.html">SERVICIOS</a>
+                            <a data-aos="flip-up" class="nav-link active" href="servicios.html">SERVICIOS</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="faqs.html">FAQs</a>
@@ -52,113 +53,139 @@
             <h1>SERVICIOS</h1>
         </main>
 
-        <div class="servicios-all">
-            
 
-            <div class="accordion accordion-flush accordion-flush-servicios accordion-servicios" id="accordionFlushExample">
+        <div class="accordion accordion-flush accordion-flush-servicios accordion-servicios" id="accordionFlushExample">
 
 
-                <div class="accordion-item accordion-item-servicios accordion-item-hotel">
-                    <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button accordion-button-servicios  hotel-title collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"> 
-                            <p class="servicios-title">Hotel</p>
-                        </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse accordion-collapse-servicios collapse" aria-labelledby="flush-headingOne"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body hotel-txt">
-                            <p class="accordion-txt">Disponemos de espacios para las necesidades de cada una de las mascotas que nos visitan. Contamos con diferentes tipos de estadías con diferentes comodidades para que puedas decidir cual se adapta mejor a tu mascota. Además, en HOMA contamos con un gran equipo profesional y humano conformado por cuidadores especializados y veterinarios que brindan las atenciones y cuidados necesarios a los animales alojados. No tienes que preocuparte por dejar a tu perro solo en casa mientras estás fuera. ¡Nos encargaremos de brindarle a tu perro la atención y el ejercicio que necesita para mantenerse feliz y saludable!</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="accordion-item accordion-item-servicios accordion-item-guarderia">
-                    <h2 class="accordion-header" id="flush-headingTwo">
-                        <button class="accordion-button accordion-button-servicios collapsed guarderia-title" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"> <p class="servicios-title">Guarderia</p>
-                        </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse accordion-collapse-servicios collapse" aria-labelledby="flush-headingTwo"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body guarderia-txt"> 
-                            <p class="accordion-txt">
-                                Divertidos baños en nuestro lago, a interminables corridas a lo largo de una amplia zona de parque, tres hectáreas de entorno verde y natural proporcionan todo lo necesario para la diversión de nuestros huéspedes caninos. En HOMA le brindamos a tu fiel compañero lo mejor de nosotros para que se sienta como en tu casa en cada momento.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="accordion-item accordion-item-servicios accordion-item-paseos">
-                    <h2 class="accordion-header" id="flush-headingThree">
-                        <button class="accordion-button accordion-button-servicios collapsed paseos-title" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseThree" aria-expanded="false"
-                            aria-controls="flush-collapseThree">
-                            <p class="servicios-title">Paseos</p>
-                            
-                        </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse accordion-collapse-servicios collapse"
-                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body paseos-txt">
-                            <p class="accordion-txt">
-                                Nuestros paseos son seguros, divertidos y están diseñados para satisfacer las necesidades de tu perro. Son ideales para perros de todas las edades y tamaños y están diseñados para fomentar el ejercicio y la interacción social. Contamos con diferentes tipos de tarifas y membresías que se adapten a tus necesidades y las de tu mascota.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item accordion-item-servicios accordion-item-social">
-                    <h2 class="accordion-header" id="flush-headingFour">
-                        <button class="accordion-button accordion-button-servicios social-title collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour"> 
-                            <p class="servicios-title">Socializacion</p>
-                        </button>
-                    </h2>
-                    <div id="flush-collapseFour" class="accordion-collapse accordion-collapse-servicios collapse" aria-labelledby="flush-headingFour"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body social-txt">
-                            <p class="accordion-txt">Ofrecemos sesiones de socialización canina para ayudar a tu perro a desarrollar habilidades de interacción social y a aprender a comportarse adecuadamente en situaciones de grupo. Estas sesiones son ideales para cachorros o perros que puedan necesitar un poco de ayuda extra para interactuar con otros perros y personas. Se realizan en nuestra chacra con áreas seguras y alejadas del tráfico, para garantizar la seguridad de tu perro</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item accordion-item-servicios accordion-item-traslados">
-                    <h2 class="accordion-header" id="flush-headingFive">
-                        <button class="accordion-button accordion-button-servicios collapsed traslados-title" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive"> <p class="servicios-title">Traslados</p>
-                        </button>
-                    </h2>
-                    <div id="flush-collapseFive" class="accordion-collapse accordion-collapse-servicios collapse" aria-labelledby="flush-headingFive"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body traslados-txt"> 
-                            <p class="accordion-txt">
-                                Divertidos baños en nuestro lago, a interminables corridas a lo largo de una amplia zona de parque, tres hectáreas de entorno verde y natural proporcionan todo lo necesario para la diversión de nuestros huéspedes caninos. En HOMA le brindamos a tu fiel compañero lo mejor de nosotros para que se sienta como en tu casa en cada momento.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item accordion-item-servicios accordion-item-esquilados">
-                    <h2 class="accordion-header" id="flush-headingSix">
-                        <button class="accordion-button accordion-button-servicios collapsed esquilados-title" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix"> <p class="servicios-title">Esquilados</p>
-                        </button>
-                    </h2>
-                    <div id="flush-collapseSix" class="accordion-collapse accordion-collapse-servicios collapse" aria-labelledby="flush-headingSix"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body esquilados-txt"> 
-                            <p class="accordion-txt">
-                                Contamos con servicio de baño para que tu amigo de cuatro patas vuelva limpio y perfumado a tu hogar. Además, también ofrecemos servicio de baño y peluquería a domicilio, con los productos necesarios para el tipo de pelo de tu perro
-                            </p>
-                        </div>
+            <div class="accordion-item accordion-item-servicios accordion-item-hotel">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button accordion-button-servicios  hotel-title collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                        aria-controls="flush-collapseOne">
+                        <p class="servicios-title">Hotel</p>
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse accordion-collapse-servicios collapse"
+                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body hotel-txt">
+                        <p class="accordion-txt">Disponemos de espacios para las necesidades de cada una de las mascotas
+                            que nos visitan. Contamos con diferentes tipos de estadías con diferentes comodidades para
+                            que puedas decidir cual se adapta mejor a tu mascota. Además, en HOMA contamos con un gran
+                            equipo profesional y humano conformado por cuidadores especializados y veterinarios que
+                            brindan las atenciones y cuidados necesarios a los animales alojados. No tienes que
+                            preocuparte por dejar a tu perro solo en casa mientras estás fuera. ¡Nos encargaremos de
+                            brindarle a tu perro la atención y el ejercicio que necesita para mantenerse feliz y
+                            saludable!</p>
                     </div>
                 </div>
             </div>
 
 
+            <div class="accordion-item accordion-item-servicios accordion-item-guarderia">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button accordion-button-servicios collapsed guarderia-title" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                        aria-controls="flush-collapseTwo">
+                        <p class="servicios-title">Guarderia</p>
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse accordion-collapse-servicios collapse"
+                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body guarderia-txt">
+                        <p class="accordion-txt">
+                            Divertidos baños en nuestro lago, a interminables corridas a lo largo de una amplia zona de
+                            parque, tres hectáreas de entorno verde y natural proporcionan todo lo necesario para la
+                            diversión de nuestros huéspedes caninos. En HOMA le brindamos a tu fiel compañero lo mejor
+                            de nosotros para que se sienta como en tu casa en cada momento.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item accordion-item-servicios accordion-item-paseos">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button accordion-button-servicios collapsed paseos-title" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                        aria-controls="flush-collapseThree">
+                        <p class="servicios-title">Paseos</p>
+
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse accordion-collapse-servicios collapse"
+                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body paseos-txt">
+                        <p class="accordion-txt">
+                            Nuestros paseos son seguros, divertidos y están diseñados para satisfacer las necesidades de
+                            tu perro. Son ideales para perros de todas las edades y tamaños y están diseñados para
+                            fomentar el ejercicio y la interacción social. Contamos con diferentes tipos de tarifas y
+                            membresías que se adapten a tus necesidades y las de tu mascota.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item accordion-item-servicios accordion-item-social">
+                <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button accordion-button-servicios social-title collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
+                        aria-controls="flush-collapseFour">
+                        <p class="servicios-title">Socializacion</p>
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse accordion-collapse-servicios collapse"
+                    aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body social-txt">
+                        <p class="accordion-txt">Ofrecemos sesiones de socialización canina para ayudar a tu perro a
+                            desarrollar habilidades de interacción social y a aprender a comportarse adecuadamente en
+                            situaciones de grupo. Estas sesiones son ideales para cachorros o perros que puedan
+                            necesitar un poco de ayuda extra para interactuar con otros perros y personas. Se realizan
+                            en nuestra chacra con áreas seguras y alejadas del tráfico, para garantizar la seguridad de
+                            tu perro</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item accordion-item-servicios accordion-item-traslados">
+                <h2 class="accordion-header" id="flush-headingFive">
+                    <button class="accordion-button accordion-button-servicios collapsed traslados-title" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false"
+                        aria-controls="flush-collapseFive">
+                        <p class="servicios-title">Traslados</p>
+                    </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse accordion-collapse-servicios collapse"
+                    aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body traslados-txt">
+                        <p class="accordion-txt">
+                            Divertidos baños en nuestro lago, a interminables corridas a lo largo de una amplia zona de
+                            parque, tres hectáreas de entorno verde y natural proporcionan todo lo necesario para la
+                            diversión de nuestros huéspedes caninos. En HOMA le brindamos a tu fiel compañero lo mejor
+                            de nosotros para que se sienta como en tu casa en cada momento.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item accordion-item-servicios accordion-item-esquilados">
+                <h2 class="accordion-header" id="flush-headingSix">
+                    <button class="accordion-button accordion-button-servicios collapsed esquilados-title" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false"
+                        aria-controls="flush-collapseSix">
+                        <p class="servicios-title">Esquilados</p>
+                    </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse accordion-collapse-servicios collapse"
+                    aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body esquilados-txt">
+                        <p class="accordion-txt">
+                            Contamos con servicio de baño para que tu amigo de cuatro patas vuelva limpio y perfumado a
+                            tu hogar. Además, también ofrecemos servicio de baño y peluquería a domicilio, con los
+                            productos necesarios para el tipo de pelo de tu perro
+                        </p>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </section>
@@ -183,15 +210,20 @@
 
         <section>
             <h2>Contactanos:</h2>
-            <h3>+598 98 454 668</h3>
+            <h3>+598 98 250 388</h3>
             <h3>hola@homa.com.uy</h3>
         </section>
 
         <section>
             <h2>Visitanos:</h2>
-            <h3>Av. Arocena 4636</h3>
+            <h3>Elbio Maneiro 4251</h3>
+            <h3>Ciudad de la Costa</h3>
         </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
